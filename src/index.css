@@ -1,0 +1,129 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-task {
+  height: 10vh;
+  width: 100vw;
+  border: 2px solid blue;
+}
+
+.add-task form {
+  height: 100%;
+  width: 20%;
+  margin: 10px auto;
+  padding: 10px;
+  /* border: 2px solid salmon; */
+}
+
+.add-task form input {
+  margin: 0px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.add-task form input[type=submit] {
+  cursor: pointer;
+}
+
+.add-task form input[type=submit]:hover {
+  background-color: aquamarine;
+}
+
+.task-list {
+  height: 90vh;
+  width: 100vw;
+  border: 2px solid pink;
+  display: flex;
+  flex-direction: row;
+}
+
+.task-list .todo {
+  height: 100%;
+  width: 50%;
+  border: 2px solid black;
+}
+
+.task-list .finished {
+  height: 85%;
+  width: 4%;
+  border: 2px solid black;
+  background-color: cornsilk;
+}
+
+.task-list .todo {
+  margin: auto;
+  width: 40%;
+  height: 85%;
+  background-color: cornsilk;
+}
+
+.task-list .finished {
+  margin: auto;
+  width: 40%;
+  height: 85%;
+}
+
+.task-list .title {
+  height: 10%;
+  font-size: 3.5rem;
+  text-align: center;
+  background-color: teal;
+  color: white;
+  font-family:monospace;
+}
+
+.js-block{
+  padding: 10px;
+  border: 1px solid red;
+  margin: 20px;
+}
+
+.js-block:hover{
+  background-color: greenyellow;
+}
+
+
+.finished .js-block{
+  border: 1px solid green;
+}
+.finished .js-block:hover{
+  background-color: darkorange;
+}
+
+.ul-list{
+  padding: 10px;
+  height: 90%;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.AppTitle{
+  font-size: 4rem;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  font-weight: bold;
+  color: blue;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
